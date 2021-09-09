@@ -1,4 +1,3 @@
-Android SDK: 30
 Instructions:
 Step 1) The user has to navigate to the Addition tab and save gestures with unique name (error prevention implemented)
 Note: For saving an another new gesture, the user has to close the keyboard by pressing the mobile back button and draw the gesture
