@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="1dp"
+        android:clickable="false"
+        android:padding="8dp">
+
+
+        <ca.uwaterloo.cs349.view.GestureView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/name_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/image"
+            app:layout_constraintEnd_toStartOf="@id/replace_image_button"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toTopOf="@+id/image"
+            tools:text="Xxxxxxxx Xxxxxxxx" />
+
+
+        <ImageButton
+            android:id="@+id/replace_image_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_baseline_replace_24"
+            app:layout_constraintEnd_toStartOf="@id/delete_image_button"
+
+            app:layout_constraintTop_toTopOf="@+id/image" />
+
+        <ImageButton
+            android:id="@+id/delete_image_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:drawablePadding="0dp"
+            android:src="@drawable/ic_baseline_delete_outline_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image" />
+
+
+        <!--       <ImageButton
+                   android:id="@+id/replace_image_button"
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:layout_marginEnd="8dp"
+                   android:src="@drawable/ic_baseline_replace_24"
+                   app:layout_constraintEnd_toStartOf="@id/delete_image_button"
+                   app:layout_constraintTop_toTopOf="@+id/ivImage" />
+       
+               <ImageButton
+                   android:id="@+id/delete_image_button"
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:src="@drawable/ic_baseline_delete_outline_24"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/ivImage" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

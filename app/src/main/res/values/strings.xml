@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">A4-CS349</string>
+    <string name="title_home">Recognition</string>
+    <string name="title_library">Library</string>
+    <string name="title_addition">Addition</string>
+    <string name="title_replace_gesture">Replace Gesture</string>
+    <string name="save">Save</string>
+    <string name="gesture_name">Gesture name</string>
+    <string name="saveLibraryDesc">Draw a gesture, and save it in recognizer library</string>
+    <string name="delete">Delete</string>
+    <string name="replace">Replace</string>
+    <string name="drawGestureDesc">Draw a gesture, we will try to recognize!</string>
+</resources>
